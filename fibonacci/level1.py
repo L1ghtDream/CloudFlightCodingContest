@@ -3,7 +3,6 @@ def main():
 
     f0 = 0
     f1 = 1
-    s = 0
 
     if n == 0:
         print(0)
@@ -12,11 +11,12 @@ def main():
         print(1)
         return
 
-    for iter in range(2,n+1):
-        new_f = f0+f1
+    for iter in range(2, n + 1):
+        new_f = f0 + f1
         f0 = f1
         f1 = new_f
         print(new_f)
+
 
 if __name__ == '__main__':
     main()
